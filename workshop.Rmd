@@ -1,0 +1,49 @@
+---
+title: "Watzek Library ggplot workshop"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+## ggplot workshop
+
+#### Watzek Library
+#### March 18th, 2020
+
+
+### Goals of this workshop:  
+
+* Load and filter datasets as needed
+* Learn the basic elements of ggplot
+* Repeat!
+* Use a few statistical methods in R
+
+
+### What is ggplot?
+
+ggplot is an R package created by Hadley Wickham (he's kind of a big deal in the R world). The "gg" translates to "grammar of graphics", and is founded in the idea that all data visualizations are comprised of three components:
+
+* data set
+* aesthetics, or visual marks that represent the data (i.e. the stuff that you see)
+* geometric objects, or "geoms" (e.g the type of plot)
+
+ggplot is part of the "tidyverse" - a series of packages that share common strategies for working with data and generating visualizations. In last Wednesday's workshop, we used some tidyverse packages (readr, dplyr) for reading and filtering datasets. Fortunately, there's a simple way to load all these libraries at once, as we'll use various functions spread throughout different packages in the tidyverse:
+
+```{r}
+library(tidyverse)
+```
+
+
+### Getting Help  
+ggplot has many, many options and possibilities. When getting started (and even once you're a ggplot expert), it's a good idea to refer to documentation. In the "Files" section, click on the "ggplot2-cheatsheet.pdf". The RStudio "help" function is also useful:
+
+```{r}
+help(ggplot)
+```
+
+```{r}
+help(geom_jitter)
+```
+
+As always, entering your question or error message into your favorite search engine is trypically a pretty effective way to get help. Chances are good that someone else has already encountered a ggplot problem you've encountered, and the answers are likely online.
+
